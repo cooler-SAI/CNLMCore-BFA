@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: characters
 -- ------------------------------------------------------
--- Server version	10.1.6-MariaDB
+-- Server version 10.1.6-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;

@@ -101,15 +101,15 @@ char const* GitRevision::GetFullVersion()
 {
 
     // 基于当前系统的当前日期/时间
-   time_t now = time(0);
-   
-   // 把 now 转换为字符串形式
-   char* dt = ctime(&now);
-   char* s = "菜鸟联盟 rev. %s (" TRINITY_PLATFORM_STR ", " _BUILD_DIRECTIVE ", " TRINITY_LINKAGE_TYPE_STR ")";
-   // VER_PRODUCTVERSION_STR = dt;
-   printf(s, dt);
-   
-   return s;
+    time_t now = time(0);
+
+    // 把 now 转换为字符串形式
+    char* dt = ctime(&now);
+    char* s = "菜鸟联盟 rev. %s (" TRINITY_PLATFORM_STR ", " _BUILD_DIRECTIVE ", " TRINITY_LINKAGE_TYPE_STR ")";
+    // VER_PRODUCTVERSION_STR = dt;
+    printf(s, dt);
+
+    return s;
 }
 
 char const* GitRevision::GetCompanyNameStr()

@@ -12935,27 +12935,6 @@ uint32 Unit::GetModelForForm(ShapeshiftForm form) const
                     return 37730;
                 return 21244;
             case FORM_MOONKIN_FORM:
-			{
-                // Glyph of Stars
-                if (HasAura(114301))
-                    return GetNativeDisplayId();
-
-                switch (getRace())
-                {
-                    case RACE_NIGHTELF:
-                        return 15374;
-                    case RACE_HIGHMOUNTAIN_TAUREN:
-                    case RACE_TAUREN:
-                        return 15375;
-                    case RACE_WORGEN:
-                        return 37173;
-                    case RACE_TROLL:
-                        return 37174;
-                    default:
-                        break;
-                }
-                break;
-            }
             case FORM_MOONKIN_FORM_RESTORATION:
             {
                 // Glyph of Stars

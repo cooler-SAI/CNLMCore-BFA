@@ -2603,6 +2603,17 @@ void SpellMgr::LoadSpellInfoCorrections()
     {
         const_cast<SpellEffectInfo*>(spellInfo->GetEffect(EFFECT_0))->TriggerSpell = 36325; // They Must Burn Bomb Drop (DND)
     });
+	
+	ApplySpellFix({ 193640 }, [](SpellInfo* spellInfo)
+    {
+        const_cast<SpellEffectInfo*>(spellInfo->GetEffect(EFFECT_0))->TriggerSpell = 0; // REMOVE Trigger
+    });
+	
+	ApplySpellFix({ 114108 , 102352}, [](SpellInfo* spellInfo) // Soul of the Forest , Cenarion Ward
+    {
+        spellInfo->ProcFlags = 0;
+        spellInfo->ProcChance = 0;
+    });
 
     // Execute
     ApplySpellFix({ 5308 }, [](SpellInfo* spellInfo)

@@ -23,3 +23,5 @@ nbproject/*
 cmake-build-*/
 .vs
 .Build
+.Build2
+.Build3
