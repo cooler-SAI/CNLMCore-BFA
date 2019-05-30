@@ -4,7 +4,7 @@ CNLMCore-BFA
 
 CNLMCore-BFA is a *MMORPG* Framework based mostly in C++.
 
-It is fully based on *TrinityCore*, with upgrades like :
+It is fully based on *TrinityCore*.
 
 It is completely open source; community involvement is highly encouraged.
 
