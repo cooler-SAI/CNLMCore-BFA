@@ -1,7 +1,3 @@
-ALTER TABLE `gossip_menu_option_action` add `OptionIndex` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '0';
-ALTER TABLE `gossip_menu_option_box` add `OptionIndex` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '0';
-ALTER TABLE `gossip_menu_option_trainer` add `OptionIndex` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '0';
-
 SET @CGUID := 259501;
 DELETE FROM `creature` WHERE `guid` BETWEEN @CGUID+0 AND @CGUID+20;
 INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseId`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
